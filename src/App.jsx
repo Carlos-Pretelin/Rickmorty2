@@ -5,7 +5,7 @@ import Characters from "./components/Characters.jsx";
 function App() {
   return (
     <div className="App">
-     hola mundo  
+     
      <Header></Header>
      <Characters></Characters>
 

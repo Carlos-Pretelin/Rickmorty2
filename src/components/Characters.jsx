@@ -6,6 +6,7 @@ const Characters = () => {
     const [characters, setCharacters] = useState([]);
     const API = "https://rickandmortyapi.com/api/character/";
     const morty = `${API}2`;
+    const test = false
 
     useEffect( () => {
         fetch(API)
@@ -25,13 +26,14 @@ const Characters = () => {
                     
                     <img src={character.image} alt={`Foto de ${character.name}`} />
 
-                    <div className='Characters-info'>
+                    <div className={'Characters-info' }>
 
-                        <h2>{character.name}</h2>
-                        <h4>{character.status}</h4>
-                        <h4>{character.species}</h4>
-                        <h4>{character.gender}</h4>
-                        
+                        <span className={test ? "hola" : "hola2"}
+                        >{character.name}</span>
+                        <span>{`❤ Status :${character.status}`}</span>
+                        <span>{`🧍 Species :${character.species}`}</span>
+                        <span>{`👫 Gender :${character.gender}`}</span>
+
                     </div>
                     
                 </div>
