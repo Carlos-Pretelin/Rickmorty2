@@ -1,23 +1,48 @@
 import React, { useState } from 'react'
+import useTheme from "../hooks/useTheme.js"
 
 
 const Header01 = () => {
-    const [darkmode, setDarkMode] = useState(true);
 
-    const handleClick = () => {
-        setDarkMode(!darkmode)
 
-    }
+
+    //mi hook
+    const {darkTheme, handleThemeChange} = useTheme();
+    
+    
+
+
+
+    // LAs de Platzi si funcionan 
+    // const [darkmode, setDarkMode] = useState(true);
+    // const handleClick = () => {
+    //     setDarkMode(!darkmode)
+
+    // }
+
+
     return(
         <div className='Header'>
             <h1>React Hooks</h1>
+
+
             {/* <button 
             type='button'
             onClick={handleClick}
             >{darkmode ? "Dark Mode" : "Light Mode"}</button> */}
+
+
+
             <a 
-            onClick={handleClick}
-            class="my-button" href="#"><span></span>{darkmode ? "Dark Mode" : "Light Mode"}</a>
+            onClick={handleThemeChange}
+            class="my-button" href="#"><span></span>{darkTheme ? "Dark Mode" : "Light Mode"}</a>
+
+        
+            
+
+
+
+
         </div>
     );
 }
