@@ -22,10 +22,21 @@
     margin: 15px 0;
     justify-content: space-around;
 }
+
+#light .Header{
+    background-color: aliceblue;
+}
+#dark .Header{
+    background-color: rgb(55, 135, 205);
+}
+
+
+
 .Characters{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    
     
 }
 .Characters-Card{

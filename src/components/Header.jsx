@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import useTheme from "../hooks/useTheme.js"
+import themeContext from '../context/themeContext.js';
 
 
 const Header01 = () => {
@@ -34,6 +35,7 @@ const Header01 = () => {
 
 
             <a 
+            
             onClick={handleThemeChange}
             class="my-button" href="#"><span></span>{darkTheme ? "Dark Mode" : "Light Mode"}</a>
 

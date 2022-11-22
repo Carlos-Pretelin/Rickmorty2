@@ -10,6 +10,7 @@ const Characters = () => {
     const characters = useCharacters(API);
     const {darkTheme} = useTheme();
     
+    
     const test = false
 
     return(
