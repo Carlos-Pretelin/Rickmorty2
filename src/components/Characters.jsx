@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import useCharacters from '../hooks/useCharacters';
-import useTheme from '../hooks/useTheme';
+import themeContext from '../context/themeContext';
 import "../styles/Characters.css"
 
 
@@ -8,7 +8,7 @@ const Characters = () => {
     
     const API = "https://rickandmortyapi.com/api/character/";
     const characters = useCharacters(API);
-    const {darkTheme} = useTheme();
+    const {theme} = useContext(themeContext)
     
     
     const test = false
@@ -24,8 +24,8 @@ const Characters = () => {
                     <div className={'Characters-info' }>
 
                         <span
-                        onChange={darkTheme}
-                         className={darkTheme ? "hola" : "hola2"}
+                        
+                         className={theme === "Light Mode" ? "hola" : "hola2"}
                         >{character.name}</span>
                         
                         <span>{`❤ Status :${character.status}`}</span>
