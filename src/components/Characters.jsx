@@ -11,7 +11,7 @@ const Characters = () => {
     const {theme} = useContext(themeContext)
     
     
-    const test = false
+    
 
     return(
          <div className='Characters'>
@@ -24,7 +24,6 @@ const Characters = () => {
                     <div className={'Characters-info' }>
 
                         <span
-                        
                          className={theme === "Light Mode" ? "hola" : "hola2"}
                         >{character.name}</span>
                         
