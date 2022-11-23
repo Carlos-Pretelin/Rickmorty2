@@ -1,20 +1,15 @@
-import {useEffect, useState} from 'react'
+import { useEffect, useState } from 'react';
 
 const useTheme = () => {
+  const [theme, setTheme] = useState('Light-Mode');
 
+  const toggleTheme = () => {
+    setTheme((current) =>
+      current === 'Light-Mode' ? 'Dark-Mode' : 'Light-Mode'
+    );
+  };
 
-     const [theme, setTheme] = useState("Light-Mode")
+  return { theme, toggleTheme };
+};
 
-
-      const toggleTheme = () =>{
-        setTheme( (current)=> (current === "Light-Mode") ? "Dark-Mode" : "Light-Mode")
-      }
-
-
-  return {theme, toggleTheme}
-    
-    
-  
-}
-
-export default useTheme
+export default useTheme;

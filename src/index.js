@@ -1,17 +1,14 @@
-import React from "react";
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import App from "./App";
+import React from 'react';
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import App from './App';
 //import themeContext from "./context/themeContext.js";
-
 
 const rootElement = document.getElementById('app');
 const root = createRoot(rootElement);
 
 root.render(
-    //<themeContext.Provider>
-        <App />
-    //</themeContext.Provider>
-    
-   
+  //<themeContext.Provider>
+  <App />
+  //</themeContext.Provider>
 );

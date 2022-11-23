@@ -1,11 +1,7 @@
-
-
 .Characters{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
-    
 }
 .Characters-Card{
     max-width: 300px;
@@ -16,13 +12,9 @@
     -webkit-box-shadow: 1px 2px 35px 2px rgba(0,0,0,0.71);
     -moz-box-shadow: 1px 2px 35px 2px rgba(0,0,0,0.71);
 }
-
 #Dark-Mode .Characters-Card{
     border: solid 5px #1A8CD8;
 }
-
-
-
 .Characters-info{
     display: flex;
     flex-direction: column;
@@ -34,21 +26,13 @@
    margin-bottom: 15px;
    font-weight: 800;
 }
-
 #Dark-Mode .Characters-info span:nth-child(1){
     color: #1A8CD8;
  }
-
-
-
 .Characters-info span:nth-child(n+2){
     font-size: 20px;
-    color: black;
-    
+    color: black;   
 }
-
-#Dark-Mode .Characters-info span:nth-child(n+2){
-    
-    color: #FFFFFF;
-    
+#Dark-Mode .Characters-info span:nth-child(n+2){  
+    color: #FFFFFF; 
 }
