@@ -1,0 +1,31 @@
+
+.Header{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Header-Button{
+    background-color: #88bde0;
+    font-size: 18px;
+    padding: 14px 15px;
+    color: #FFFFFF;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#Dark-Mode .Header-Button{
+    background-color: #7856FF;
+}
+
+a.Header-Button:active{
+    transform: scale(0.95);
+}
+a.Header-Button:hover{
+    background-color:#7856FF ;
+    background: linear-gradient(to right,#88bde0 ,#7856FF);
+}

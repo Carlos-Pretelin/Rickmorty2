@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react'
 import useCharacters from '../hooks/useCharacters';
 import themeContext from '../context/themeContext';
-//import "../styles/Characters.css"
+import "../styles/Characters.css"
 
 
 const Characters = () => {
@@ -26,7 +26,7 @@ const Characters = () => {
                     <div className={'Characters-info' }>
 
                         <span
-                         //className={theme === "Light-Mode" ? "hola" : "hola2"}
+                        
                         >{character.name}</span>
                         
                         <span>{`❤ Status :${character.status}`}</span>
