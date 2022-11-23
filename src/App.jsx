@@ -3,6 +3,7 @@ import Header from "./components/Header.jsx";
 import Characters from "./components/Characters.jsx";
 import themeContext from "./context/themeContext.js";
 import useTheme from "./hooks/useTheme.js";
+import "./styles/App.css"
 
 function App() {
 

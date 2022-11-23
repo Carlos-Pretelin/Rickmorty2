@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react'
 import useCharacters from '../hooks/useCharacters';
 import themeContext from '../context/themeContext';
-import "../styles/Characters.css"
+//import "../styles/Characters.css"
 
 
 const Characters = () => {
@@ -14,9 +14,11 @@ const Characters = () => {
     
 
     return(
-         <div className='Characters'>
+         <div className='Characters' id={theme === "Light-Mode" ? "Light-Mode" : "Dark-Mode"}>
              {characters.map((character) => (
                 
+                <React.Fragment
+                key={character.name}>
                 <div className='Characters-Card'>
                     
                     <img src={character.image} alt={`Foto de ${character.name}`} />
@@ -24,7 +26,7 @@ const Characters = () => {
                     <div className={'Characters-info' }>
 
                         <span
-                         className={theme === "Light Mode" ? "hola" : "hola2"}
+                         //className={theme === "Light-Mode" ? "hola" : "hola2"}
                         >{character.name}</span>
                         
                         <span>{`❤ Status :${character.status}`}</span>
@@ -34,6 +36,7 @@ const Characters = () => {
                     </div>
                     
                 </div>
+                </React.Fragment>
                 
                  
             ) )}

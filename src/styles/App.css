@@ -17,18 +17,31 @@
 
 .Header{
     display: flex;
-    height: 50px;
+    height: 80px;
     width: 100%;
-    margin-bottom: 15px;
     justify-content: space-around;
+    align-items: center;
+}
+#Light-Mode{
+    background-color: #FFFFFF;
+    color: #1A8CD8;
+    
 }
 
-#light{
-    background-color: aliceblue;
+#Dark-Mode{
+    background-color: #15202B;
+    color: #FFFFFF;
+    
 }
-#dark {
-    background-color: rgb(55, 135, 205);
+
+
+/* 
+#Light-Mode{
+    background-color: #FFFFFF;
 }
+#Dark-Mode {
+    background-color: #1A8CD8;
+} */
 
 
 
@@ -45,8 +58,12 @@
     margin: 50px 25px 25px 25px;
     border: solid 5px lightblue;
     box-shadow: 1px 2px 35px 2px rgba(0,0,0,0.71);
--webkit-box-shadow: 1px 2px 35px 2px rgba(0,0,0,0.71);
--moz-box-shadow: 1px 2px 35px 2px rgba(0,0,0,0.71);
+    -webkit-box-shadow: 1px 2px 35px 2px rgba(0,0,0,0.71);
+    -moz-box-shadow: 1px 2px 35px 2px rgba(0,0,0,0.71);
+}
+
+#Dark-Mode .Characters-Card{
+    border: solid 5px rgb(26, 140, 216);
 }
 
 .Characters-info{
