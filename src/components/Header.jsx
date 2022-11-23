@@ -8,13 +8,13 @@ const Header01 = () => {
 
 
     //mi hook
-    const {darkTheme, handleThemeChange} = useTheme();
+    //const {darkTheme, handleThemeChange} = useTheme();
     
-    
+    const {theme, toggleTheme} = useContext(themeContext);
 
 
 
-    // LAs de Platzi si funcionan 
+    // Las de Platzi si funcionan 
     // const [darkmode, setDarkMode] = useState(true);
     // const handleClick = () => {
     //     setDarkMode(!darkmode)
@@ -27,17 +27,12 @@ const Header01 = () => {
             <h1>React Hooks</h1>
 
 
-            {/* <button 
-            type='button'
-            onClick={handleClick}
-            >{darkmode ? "Dark Mode" : "Light Mode"}</button> */}
 
-
+           
 
             <a 
-            
-            onClick={handleThemeChange}
-            class="my-button" href="#"><span></span>{darkTheme ? "Dark Mode" : "Light Mode"}</a>
+            onClick={toggleTheme}
+            class="my-button" href="#"><span></span>{theme === "Light Mode" ? "Light Mode" : "Dark Mode"}</a>
 
         
             

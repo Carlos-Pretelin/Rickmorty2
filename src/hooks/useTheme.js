@@ -2,24 +2,16 @@ import {useEffect, useState} from 'react'
 
 const useTheme = () => {
 
-    const [darkTheme, setDarkTheme] = useState(true);
+
+     const [theme, setTheme] = useState("Light Mode")
 
 
-     const handleThemeChange = () => {
-        setDarkTheme(!darkTheme)
-        console.log("culo")
-
-     }
-     
-
-    // const tema = () => {
-    //   setDarkTheme(!darkTheme)
-    //   console.log("cambio el tema !")
-    // }
-  
+      const toggleTheme = () =>{
+        setTheme( (current)=> (current === "Light Mode") ? "Dark Mode" : "Light Mode")
+      }
 
 
-  return {darkTheme, handleThemeChange}
+  return {theme, toggleTheme}
     
     
   
